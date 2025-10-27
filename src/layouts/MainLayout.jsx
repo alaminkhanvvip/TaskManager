@@ -1,11 +1,14 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import TaskManager from "../pages/TaskManager";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="h-96"></div>
+      <main className="flex-1">
+        <TaskManager />
+      </main>
       <Footer />
     </div>
   );
